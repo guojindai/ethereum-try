@@ -1,0 +1,11 @@
+{
+  "name": "ethereum-try",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.81.0",
+    "solc": "^0.4.10"
+  }
+}
