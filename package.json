@@ -5,6 +5,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.1.2",
     "request": "^2.81.0",
     "solc": "^0.4.10"
   }
