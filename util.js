@@ -51,7 +51,10 @@ module.exports = {
         if (output.formal && output.formal.errors && output.formal.errors.length) {
           console.warn('solidity compile formal errors: '.yellow, output.formal);
         }
-        resolve(output.contracts[Object.keys(output.contracts)[0]]);
+        const compiledData = output.contracts[Object.keys(output.contracts)[0]];
+        console.log('compileSolidity compiledData'.green);
+        console.log(compiledData);
+        resolve(compiledData);
       });
     });
   },
