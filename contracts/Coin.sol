@@ -5,6 +5,7 @@ contract Coin {
   mapping (address => uint) public balances;
 
   event Sent(address from, address to, uint amount);
+  event Print(address who, uint balance);
 
   function Coin() {
     minter = msg.sender;
@@ -20,5 +21,10 @@ contract Coin {
     balances[sender] -= amount;
     balances[to] += amount;
     Sent(sender, to, amount);
+  }
+
+  function getBalance(address who) returns (uint) {
+    Print(who, balances[who]);
+    return balances[who];
   }
 }
